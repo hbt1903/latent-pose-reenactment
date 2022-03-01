@@ -49,3 +49,4 @@ mv universal_trained.pth latent-pose-reenactment/utils/Graphonomy/data/model/uni
 mv vgg19-d01eb7cb.pth latent-pose-reenactment/criterions/common/vgg19-d01eb7cb.pth
 mv vgg_face_weights.pth latent-pose-reenactment/criterions/common/vgg_face_weights.pth
 mv images latent-pose-reenactment/
+mv inference_folder.py latent-pose-reenactment/utils/Graphonomy/exp/inference/
