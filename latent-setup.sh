@@ -48,7 +48,6 @@ mv latent-pose-release.pth latent-pose-reenactment/model/latent-pose-release.pth
 mv universal_trained.pth latent-pose-reenactment/utils/Graphonomy/data/model/universal_trained.pth
 mv vgg19-d01eb7cb.pth latent-pose-reenactment/criterions/common/vgg19-d01eb7cb.pth
 mv vgg_face_weights.pth latent-pose-reenactment/criterions/common/vgg_face_weights.pth
-mv images latent-pose-reenactment/
 mv videos latent-pose-reenactment/
 mv inference_folder.py latent-pose-reenactment/utils/Graphonomy/exp/inference/
 rm latent-pose-reenactment/utils/preprocess_dataset.sh
