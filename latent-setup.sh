@@ -50,3 +50,9 @@ mv vgg19-d01eb7cb.pth latent-pose-reenactment/criterions/common/vgg19-d01eb7cb.p
 mv vgg_face_weights.pth latent-pose-reenactment/criterions/common/vgg_face_weights.pth
 mv images latent-pose-reenactment/
 mv inference_folder.py latent-pose-reenactment/utils/Graphonomy/exp/inference/
+rm latent-pose-reenactment/utils/preprocess_dataset.sh
+mv preprocess_dataset.sh latent-pose-reenactment/utils/
+mv meta_train.sh latent-pose-reenactment/utils/
+
+chmod +x latent-pose-reenactment/utils/meta_train.sh
+chmod +x latent-pose-reenactment/utils/preprocess_dataset.sh
