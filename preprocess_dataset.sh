@@ -40,8 +40,8 @@ DATASET_ROOT="/content/latent-pose-reenactment"
 
 # Initialize `IDENTITIES` -- the list of folders (paths relative to $DATASET_ROOT/images
 # or $DATASET_ROOT/videos), each containing raw images or one video of some person.
-cd "$DATASET_ROOT/images" # or e.g. `"$DATASET_ROOT/videos"`
-IDENTITIES=(*) # or `(*/*)`, or whatever else
+cd "$DATASET_ROOT/videos" # or e.g. `"$DATASET_ROOT/images"`
+IDENTITIES=(messi) # or `(*/*)`, or whatever else
 cd ../utils
 
 pwd
@@ -60,7 +60,7 @@ echo "Got ${#IDENTITIES[@]} folders, will process from ${FIRST_IDX}-th to ${LAST
 pwd
 # Switch off (set to `false` or comment out) unnecessary operations
 DO_DECODE_VIDEOS=\
-false
+true
 
 DO_CROP=\
 true
