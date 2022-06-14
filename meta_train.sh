@@ -1,12 +1,12 @@
 DATASET_ROOT="/content/latent-pose-reenactment"
-IDENTITY_NAME="messi"
+IDENTITY_NAME="id1"
 MAX_BATCH_SIZE=8             # pick the largest possible, start with 8 and decrease until it fits in VRAM
 CHECKPOINT_PATH="/content/latent-pose-reenactment/model/latent-pose-release.pth"
 OUTPUT_PATH="/content/latent-pose-reenactment/outputs/"       # a directory for outputs, will be created
 RUN_NAME="tony_hawk_take_1"  # give your run a name if you want
 
 # Important. See the note below
-TARGET_NUM_ITERATIONS=125
+TARGET_NUM_ITERATIONS=10
 
 # Don't change these
 NUM_IMAGES=`ls -1 "$DATASET_ROOT/images-cropped/$IDENTITY_NAME" | wc -l`
